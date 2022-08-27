@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="50dp">
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    app:lottie_autoPlay="true"
+    android:id="@+id/lottie"
+    app:lottie_rawRes="@raw/data"
+    android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottie"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Please Wait.... "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:gravity="center_horizontal" />
+</RelativeLayout>

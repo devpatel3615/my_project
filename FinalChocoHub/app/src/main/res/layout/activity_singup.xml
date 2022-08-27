@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/design_back"
+    android:layout_height="match_parent"
+    tools:context=".singup"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/view1"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:textColor="#505153"
+                android:text="Sign Up"
+                />
+
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/view"
+                android:layout_marginTop="130dp"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/delius"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:textColor="#7c7d7e"
+                android:text="Add Your details to sing up"
+                />
+
+            <EditText
+                android:id="@+id/siupname"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="60dp"
+                android:layout_marginTop="180dp"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:ems="10"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="Enter name..."
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_person_icon"
+                android:drawableLeft="@drawable/custom_person_icon"/>
+
+            <!--        Location-->
+
+            <EditText
+
+                android:id="@+id/siupaddress"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Address..."
+                android:inputType="textPostalAddress"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@id/siupname"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_location_icon"
+                android:drawableLeft="@drawable/custom_location_icon"
+                android:paddingLeft="12dp" />
+
+            <!--        Phone-->
+
+            <EditText
+                android:id="@+id/siupphone"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Phone no..."
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@id/siupaddress"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_phone_icon"
+                android:drawableLeft="@drawable/custom_phone_icon"
+                android:paddingLeft="12dp" />
+
+            <!--    User_Email-->
+
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/siupemail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Email..."
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@id/siupphone"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_email_icon"
+                android:drawableLeft="@drawable/custom_email_icon"
+                android:paddingLeft="12dp" />
+
+            <!--    Password-->
+
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/siuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Password..."
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@id/siupemail"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:drawableLeft="@drawable/custom_lock_icon"
+                android:paddingLeft="12dp" />
+
+
+
+            <Button
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnsiup"
+                android:layout_width="300dp"
+                style="@android:style/Widget.Button"
+                android:hint="Sign up"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="570dp"
+                android:layout_height="50dp"
+                android:textSize="24dp"
+                android:background="@drawable/cancel_"
+                >
+
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

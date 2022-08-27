@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/design_back"
+    android:id="@+id/drawer"
+    tools:context=".Complain"
+    tools:openDrawer="start">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/view1"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#505153"
+                android:text="Complain detail !"
+                />
+            <EditText
+                android:id="@+id/editcomplain"
+                android:layout_width="310dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="45dp"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:layout_below="@id/view1"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="What's your complain type hear..."
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="12dp"
+                android:background="@drawable/button123"
+                android:drawableStart="@drawable/custom_feedback_icon"
+                android:drawableLeft="@drawable/custom_feedback_icon"/>
+
+
+            <Button
+                android:id="@+id/btncomplain"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editcomplain"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/delius"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_white"
+                android:hint="Submit complain"
+                android:textColorHint="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold">
+
+            </Button>
+        </RelativeLayout>
+
+    </ScrollView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:id="@+id/complainView">
+
+    </ListView>
+
+
+
+</RelativeLayout>
+
+
+
+
+

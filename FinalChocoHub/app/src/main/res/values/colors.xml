@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#a7bbcb</color>-->
+<!--    <color name="colorPrimaryDark">#923a21</color>-->
+    <color name="background">#c8b29a</color>
+    <color name="black">#010101</color>
+    <color name="logo_bg">#cead9e</color>
+<color name="white">#ffffff</color>
+    <color name="black_white">#BAB9B9</color>
+    <color name="green1">#505153</color>
+    <color name="green">#01A93A</color>
+    <color name="Back">#EBF3F5</color>
+    <color name="navicon1">#FF9800</color>
+    <color name="mustard">#ffdb58</color>
+    <color name="Dark_blue">#EFEFEF</color>
+    <color name="whiteoriginal">#03DAC5</color>
+<!--    //<color name="colorAccent">#081165</color>-->
+    <color name="New_one">#ECF0F3</color>
+
+
+    <color name="colorPrimary">#AA00FF</color>
+    <color name="colorPrimaryDark">#130B18</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#FBFBFB</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+
+</resources>

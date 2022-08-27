@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_Chang_password"
+            android:icon="@drawable/password_image"
+           android:title="Change Password" />
+        <item
+            android:id="@+id/nav_My_cart"
+            android:icon="@drawable/nav_add"
+            android:title="Your cart" />
+        <item
+            android:id="@+id/nav_Complain"
+            android:icon="@drawable/nav_comp"
+            android:title="Complain" />
+        <item
+            android:id="@+id/nav_brochure"
+            android:icon="@drawable/nav_pdf"
+            android:title="Brochure" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/nav_feed"
+            android:title="Feedback" />
+
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_log_out"
+            android:title="Logout" />
+    </group>
+</menu>
+

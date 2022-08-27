@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@drawable/button_white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_AddtoBeg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/button123"
+            android:layout_marginLeft="270dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="-107dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvAddToBegProductName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Product Name"
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvproid"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tvAddToBegATBID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="invisible"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_Addtobeg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Price"
+                android:textColor="#000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ₹ "
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvAddToBegProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Product Price"
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linierLayout"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Minus"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_white"
+                    android:textColor="#000"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvAddToBegProductQTY"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:padding="11dp"/>
+                <Button
+                    android:id="@+id/btn_Plus"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_white"
+                    android:textColor="#000"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_AddtoBeg_Delete"
+                android:layout_width="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/delete" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

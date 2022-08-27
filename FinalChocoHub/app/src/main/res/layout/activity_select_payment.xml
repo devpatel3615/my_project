@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/payment1"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:text="Payment"
+            android:textColor="#505153"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/delius"
+            android:text="Select your payment way"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showtext"/>
+
+        <RelativeLayout
+            android:padding="2dp"
+            android:background="@drawable/pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="2dp"
+            android:background="@drawable/payment123"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+        <TextView
+            android:id="@+id/daddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvAddToBeg"
+            android:text="Delivery Address"
+            android:textColor="#4599DF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle=""
+            android:fontFamily="serif"
+            android:hint=" "
+            android:layout_below="@+id/daddress"
+            android:text="address"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            />
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:padding="2dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="6dp"
+            android:background="@drawable/payment123"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Addresss"
+            android:text="More ways to pay"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#4599DF"
+            />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogrp"
+            android:layout_below="@id/textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp">
+
+            <RadioButton android:id="@+id/radio_offline"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/proswipebtn_red"
+                android:text="Pay on Delivery" >
+
+            </RadioButton>
+            <RadioButton android:id="@+id/radio_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-10dp"
+                android:textColor="@color/proswipebtn_red"
+                android:layout_marginTop="10dp"
+                android:text="UPI Banking" />
+
+        </RadioGroup>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="2dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="6dp"
+            android:background="@drawable/payment123"
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+        <TableLayout
+            android:layout_above="@+id/bottom_btn"
+            android:id="@+id/table_layout_payment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/table_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/sub_total"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:text="Sub Total"
+                    android:textColor="#1E0000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:text="₹"
+                    android:layout_marginLeft="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#1E0000"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/amount_total"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:hint=""
+                    android:textSize="17dp"
+                    android:textColor="#1E0000"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/table_row_2"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/install"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#1E0000"
+                    android:text="Product Installation" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:text="₹"
+                    android:textAlignment="center"
+                    android:textColor="#1E0000"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/install_amount"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#1E0000"
+                    android:textSize="17dp"
+                    android:hint="" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_row_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:text="Delivery Cost"
+                    android:textColor="#1E0000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:layout_marginLeft="40dp"
+                    android:text="₹"
+                    android:textAlignment="center"
+                    android:textColor="#1E0000"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/d_cost"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:hint=""
+                    android:textSize="17dp"
+                    android:textColor="#1E0000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/table_row_4"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:text="Total" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvAddToBeg"
+                    android:text="₹"
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#FF0000"
+                    android:textSize="17dp"
+                    android:hint="" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Payment"
+                android:textAlignment="center"
+                android:background="@drawable/button123"
+                android:textColor="#4169E1"
+                android:textAllCaps="false" />
+
+        </TableLayout>
+        </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/changing_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Changing State appear here"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

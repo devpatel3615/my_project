@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalchocohub">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalChocoHub">
+        <activity
+            android:name=".Google_pay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PhonePay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pay_pal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Thank_payment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectPayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OnlinePayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Update_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".PDF_download"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".View_Order_Detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YourOrder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fragment_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YourCart"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".singup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Product"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Payment"
+            android:parentActivityName=".menu_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menu_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Logout"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home_fg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forgotpassword"
+            android:parentActivityName=".login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".Feedback"
+                android:screenOrientation="portrait"
+                android:parentActivityName=".menu_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Complain"
+            android:parentActivityName=".menu_list"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".change_password"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Category"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".menu_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

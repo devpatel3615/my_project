@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"></item>
+    <item android:title="Product"></item>
+    <item android:title="Profile"></item>
+    <item android:title="My Order"></item>
+    <item android:title="payment"></item>
+    <item android:title="feedback"></item>
+    <item android:title="Logout"></item>
+
+
+
+
+</menu>
